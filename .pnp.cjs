@@ -19,11 +19,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "toystory",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "scroll",\
+        "reference": "workspace:apps/scroll"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["scroll", ["workspace:apps/scroll"]],\
       ["toystory", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -3000,6 +3005,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loose-envify", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["scroll", [\
+        ["workspace:apps/scroll", {\
+          "packageLocation": "./apps/scroll/",\
+          "packageDependencies": [\
+            ["scroll", "workspace:apps/scroll"],\
+            ["@types/node", "npm:17.0.36"],\
+            ["@types/react", "npm:18.0.9"],\
+            ["@types/react-dom", "npm:18.0.5"],\
+            ["eslint", "npm:8.16.0"],\
+            ["eslint-config-next", "virtual:65ea806e21c72d5e8c35f115e160ab3553069d5c00c11db5cb766c3ad4f4309b1c87ddefc6d32872a4b4314432c17ac60fd991ecea4415f5416fdedaa33a9f73#npm:12.1.6"],\
+            ["next", "virtual:65ea806e21c72d5e8c35f115e160ab3553069d5c00c11db5cb766c3ad4f4309b1c87ddefc6d32872a4b4314432c17ac60fd991ecea4415f5416fdedaa33a9f73#npm:12.1.6"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:65ea806e21c72d5e8c35f115e160ab3553069d5c00c11db5cb766c3ad4f4309b1c87ddefc6d32872a4b4314432c17ac60fd991ecea4415f5416fdedaa33a9f73#npm:18.1.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=7ad353"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["scrollex", [\
