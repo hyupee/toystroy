@@ -4,6 +4,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "jsxImportSource": "@emotion/react",
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
